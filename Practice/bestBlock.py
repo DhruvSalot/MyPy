@@ -129,5 +129,5 @@ for key, value in finalDict.items():
   print ("Building No: %d".center(20, "=") % (key))
   for i in range(len(Reqs)):
     print (str(Reqs[i]).ljust(10,"-")  + str(value[i]).rjust(9,"-"))
-
+print()
 
