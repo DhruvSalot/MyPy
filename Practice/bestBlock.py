@@ -130,4 +130,3 @@ for key, value in finalDict.items():
   for i in range(len(Reqs)):
     print (str(Reqs[i]).ljust(10,"-")  + str(value[i]).rjust(9,"-"))
 print()
-
