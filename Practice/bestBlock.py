@@ -93,7 +93,7 @@ while descendingList :
   del descendingList[-1]
 
 finalNearestValueList = []
-for blockNo in range(len(ascendingList)):
+for blockNo in range(len(lengthOfBlocks)):
   tempNearBlockList = []
   for nearestCount in range(len(Reqs)):
     if ascendingList[blockNo][nearestCount] <= \
@@ -104,7 +104,7 @@ for blockNo in range(len(ascendingList)):
   finalNearestValueList.append(tempNearBlockList)
 
 neededDict = {}
-for steps in range(len(ascendingList)):
+for steps in range(len(lengthOfBlocks)):
   if len(neededDict) > 0 : break
   else:
     for blockNo in range(len(finalNearestValueList)):
