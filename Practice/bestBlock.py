@@ -35,15 +35,15 @@ Blocks = [{"gym"       :"true",
 
           {"gym"       :"true",
            "school"    :"true",
-           "store"     :"false",
-           "clubhouse" :"false"}]
+           "store"     :"true",
+           "clubhouse" :"true"}]
 
 
 Reqs = ["gym", "school", "store", "clubhouse"]
 
 print()
 
-lengthOfBlocks = len(Blocks) + 1
+lengthOfBlocks = len(Blocks)
 
 extraDict = {}
 for req in Reqs:
@@ -70,7 +70,7 @@ def nearestValue(Reqs, Blocks) :
         nearestList.append(blockNo)
         break
       elif Blocks[blockNo][req] == "end" :
-        nearestList.append(lengthOfBlocks)
+        nearestList.append(lengthOfBlocks + 1)
         break
   return (nearestList)
   
@@ -93,7 +93,7 @@ while descendingList :
   del descendingList[-1]
 
 finalNearestValueList = []
-for blockNo in range(len(lengthOfBlocks)):
+for blockNo in range(lengthOfBlocks):
   tempNearBlockList = []
   for nearestCount in range(len(Reqs)):
     if ascendingList[blockNo][nearestCount] <= \
@@ -104,7 +104,7 @@ for blockNo in range(len(lengthOfBlocks)):
   finalNearestValueList.append(tempNearBlockList)
 
 neededDict = {}
-for steps in range(len(lengthOfBlocks)):
+for steps in range(lengthOfBlocks):
   if len(neededDict) > 0 : break
   else:
     for blockNo in range(len(finalNearestValueList)):
@@ -117,10 +117,9 @@ def finalLooping(finalDict, neededDict, i, l):
     if v.count(l) == i :
       finalDict[k] = v
 
-
 finalDict = {}
 for l in range(len(neededDict)):
-  for i in range(len(Reqs)):
+  for i in range(len(Reqs) + 1):
     finalLooping(finalDict, neededDict, i, l)
   if len(finalDict) > 0 :
     break
