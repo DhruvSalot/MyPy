@@ -24,17 +24,17 @@ newCal2 += [[cal2[len(cal2)-1][1],bound2[1]]]
 
 # removing unwanted time for example in newCal2 ['14:30', '14:30'] and ['16:00', '16:00']
 i = 0
-while i < len(new_cal1):
+while i < len(newCal1):
     if newCal1[i][0] == newCal1[i][1]:
         del newCal1[i]
-        i -= 1
+        i -= 1 
     else :
         i += 1
 
 
 i = 0
 while i < len(newCal2):
-    if newCal2[i][0] == new_cal2[i][1]:
+    if newCal2[i][0] == newCal2[i][1]:
         del newCal2[i]
         i -= 1
     else :
