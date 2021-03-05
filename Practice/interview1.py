@@ -1,3 +1,8 @@
+# 2) Making a program which analyses two person's day schedule and find the best time for them to have a meeting
+# cal list gives time when the person is busy.(unavailable on that interval)
+# bound list gives working hours for that person. (only available between that interval)
+
+
 cal1 = [['9:00','10:30'], ['12:00','13:00'], ['16:00','18:00']]
 bound1 = ['9:00','20:00']
 cal2 =[['10:00','11:30'], ['12:30','14:30'], ['14:30','15:00'], ['16:00','17:00']]
