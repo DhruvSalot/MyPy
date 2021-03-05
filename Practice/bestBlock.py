@@ -1,3 +1,15 @@
+# Qn]Assume the dictionaries in the Blocks' list to be a row of building on land.
+# if requirments like gym in the building is present, the dictionary reflects its value to be true.
+# make a program which finds the best building to live in to have every requirements near by
+# in the below example block no 2 is the answer as for:
+# gym one need to go 1 block up,
+# school already present
+# store and clubhouse unblock below
+# If you consider the fifth block tho it has every req except gym in itself 
+# one need to traverse a distance of 4 blocks above to get to gym.
+# (even if for some case for 5th blockn one need to travel 2 block up thn to 2nd block is prefered
+# (as to reach at any req one needs to only travers a distance in range 1 or 0.)
+
 Blocks = [{"gym"       :"true",
            "school"    :"true" ,
            "store"     :"false",
@@ -11,29 +23,14 @@ Blocks = [{"gym"       :"true",
           {"gym"       :"false",
            "school"    :"false",
            "store"     :"true",
-           "clubhouse" :"false"},
+           "clubhouse" :"true"},
 
           {"gym"       :"false",
            "school"    :"true",
            "store"     :"false",
            "clubhouse" :"true"},
 
-          {"gym"       :"false",
-           "school"    :"false",
-           "store"     :"true",
-           "clubhouse" :"true"},
-
-          {"gym"       :"false",
-           "school"    :"true",
-           "store"     :"true",
-           "clubhouse" :"false"},
-
-          {"gym"       :"true",
-           "school"    :"false",
-           "store"     :"true",
-           "clubhouse" :"false"},
-
-          {"gym"       :"true",
+           {"gym"       :"false",
            "school"    :"true",
            "store"     :"true",
            "clubhouse" :"true"}]
