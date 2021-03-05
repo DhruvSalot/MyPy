@@ -28,11 +28,6 @@ Blocks = [{"gym"       :"true",
           {"gym"       :"false",
            "school"    :"true",
            "store"     :"false",
-           "clubhouse" :"true"},
-
-           {"gym"       :"false",
-           "school"    :"true",
-           "store"     :"true",
            "clubhouse" :"true"}]
 
 
