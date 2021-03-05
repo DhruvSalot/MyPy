@@ -1,3 +1,4 @@
+# making program that converts given number to roman number form (numbers in range(1000))
 keyNum = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
 
 roNumDict = { 1    : "I" ,
