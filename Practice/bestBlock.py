@@ -123,10 +123,11 @@ def finalLooping(finalDict, neededDict, i, l):
 
 finalDict = {}
 for l in range(len(neededDict)):
-  for i in range(len(Reqs) + 1):
+  for i in range(len(Reqs) + 1  QQ):
     finalLooping(finalDict, neededDict, i, l)
   if len(neededDict) > 0:
       break
+
 # printing
 for key, value in finalDict.items():
   print ()
