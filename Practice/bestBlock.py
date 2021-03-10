@@ -11,36 +11,6 @@ Blocks = [{"gym"        :"true",
            {"gym"       :"false",
             "school"    :"false",
             "store"     :"false",
-            "clubhouse" :"false"},
-
-           {"gym"       :"false",
-            "school"    :"false",
-            "store"     :"false",
-            "clubhouse" :"false"},
-
-           {"gym"       :"false",
-            "school"    :"false",
-            "store"     :"true",
-            "clubhouse" :"true"},
-
-           {"gym"       :"false",
-            "school"    :"false",
-            "store"     :"false",
-            "clubhouse" :"false"},
-
-           {"gym"       :"false",
-            "school"    :"false",
-            "store"     :"false",
-            "clubhouse" :"false"},
-
-           {"gym"       :"false",
-            "school"    :"false",
-            "store"     :"false",
-            "clubhouse" :"false"},
-
-           {"gym"       :"true",
-            "school"    :"true",
-            "store"     :"false",
             "clubhouse" :"false"}]
 
 
