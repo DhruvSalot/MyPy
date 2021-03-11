@@ -1,4 +1,5 @@
 # ZUBSPOIL
+# https://www.codechef.com/problems/ZUBSPOIL
 
 def valueOfArray(listOfInt):
 	value = 0

@@ -55,7 +55,6 @@ for testNum in range(noOfTest):
 
 	#Pretty Printing
 	print ()
-	print ("Test Number: %d".center(len(str(ansMatrix[0][0])),"=") % (testNum + 1))
 	for i in range(len(ansMatrix)):
 		print(*ansMatrix[i])
 	print ()
