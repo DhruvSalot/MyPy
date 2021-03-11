@@ -1,4 +1,6 @@
 # DEFEAT
+# https://www.codechef.com/UNCO2021/problems/DEFEAT
+
 NMK = [int(i) for i  in input().split()]
 
 matrix = []
