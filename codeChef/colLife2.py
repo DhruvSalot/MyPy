@@ -1,3 +1,5 @@
+#COLGLF2
+#https://www.codechef.com/START1C/problems/COLGLF2
 noOfSsn = int(input())
 
 introTime = [int(i) for i in input().split()]
@@ -13,4 +15,3 @@ for season in range(noOfSsn):
 			timeWatched += noOfEpAndEptime[season][episode]
 		else : timeWatched += noOfEpAndEptime[season][episode] - introTime[season]
 print(timeWatched)
-
