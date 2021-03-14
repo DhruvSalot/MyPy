@@ -3,10 +3,7 @@
 
 noOfRooms = int(input())
 
-storageCap = ["x"]
-for i in input().split():
-	storageCap.append(int(i))
-storageCap.append("x")
+storageCap = ["x"] + [int(i) for i in input().split()] + ["x"]
 
 def nearLessWeigh(roomNo, storageCap):
 	i = roomNo - 1
